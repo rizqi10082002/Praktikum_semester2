@@ -9,15 +9,14 @@ class NilaiMahasiswa {
         $this->nim = $nim;
     }
     function grade() {
-        if ($this->nilai >= 0 && $this->nilai <= 35) return "E";
-        elseif ($this->nilai >= 36 && $this->nilai <= 55)
+        if ($this->nilai <= 35) return "E";
+        else if ($this->nilai >= 36 && $this->nilai <= 55)
             return "D";
-        elseif ($this->nilai >= 56 && $this->nilai <= 69)
+        else if ($this->nilai >= 56 && $this->nilai <= 69)
             return "C";
-        elseif ($this->nilai >= 70 && $this->nilai <= 84)
+        else if ($this->nilai >= 70 && $this->nilai <= 84)
             return "B";
-        elseif ($this->nilai >= 85 && $this->nilai <= 100)
-            return "A";
+        else return "A";
     }
     function kelulusan() {
         if ($this->nilai < 56) return "TIDAK LULUS";

@@ -95,7 +95,7 @@
 
         $submit = $_POST['submit'];
 
-        $niwa = new NilaiMahasiswa($_POST['nim'], $_POST['matakuliah'], $_POST['nilai']);
+        $niwa = new NilaiMahasiswa($_POST['matakuliah'], $_POST['nilai'], $_POST['nim']);
 
         if(!empty($submit)) {
             echo 'NIM : '.$niwa->nim;
