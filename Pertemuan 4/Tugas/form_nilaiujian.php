@@ -110,7 +110,6 @@
     <footer class="border-top">
         <strong>Lab Pemrograman Web Lanjutan</strong>
         <br/>Mahasiswa: Fauzan Rizqi Rizqi Ardiansyah
-        <br/>STT•NF • Kampus B
     </footer>
 </div>
 </body>
