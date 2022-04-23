@@ -36,7 +36,7 @@ include_once 'class_bmipasien.php';
                 <div class="form-group row">
                     <label for="nama" class="col-4 col-form-label">Nama</label>
                     <div class="col-8">
-                        <input id="nama" name="nama" placeholder="Kimi no Nawa" type="text" class="form-control">
+                        <input id="nama" name="nama" placeholder="Nama Anda" type="text" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -66,7 +66,7 @@ include_once 'class_bmipasien.php';
                 <div class="form-group row">
                     <label for="email" class="col-4 col-form-label">Email</label>
                     <div class="col-8">
-                        <input id="email" name="email" placeholder="coeg_322@yahoo.com" type="text" class="form-control">
+                        <input id="email" name="email" placeholder="example@gmail.com" type="text" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -101,9 +101,9 @@ include_once 'class_bmipasien.php';
                 </thead>
                 <tbody>
                     <?php
-                    $pasien1 = new Pasien(1, 'P001', 'Ahmad', 'Jakarta', '1999-03-22', 'ahmad322@gmail.com', 'L');
-                    $pasien2 = new Pasien(2, 'P002', 'Rina', 'Jakarta', '1999-04-20', 'rina420@gmail.com', 'P');
-                    $pasien3 = new Pasien(3, 'P002', 'Lutfi', 'Jakarta', '1999-06-16', 'lutfi616@gmail.com', 'L');
+                    $pasien1 = new Pasien(1, 'P001', 'Rian', 'Depok', '2000-03-22', 'rian268@gmail.com', 'L');
+                    $pasien2 = new Pasien(2, 'P002', 'Rana', 'Bogor', '1989-04-20', 'rana189@gmail.com', 'P');
+                    $pasien3 = new Pasien(3, 'P002', 'Hasan', 'Jakarta', '1979-06-16', 'hasan98@gmail.com', 'L');
                     $bmi1 = new Bmi(69.8, 169);
                     $bmi2 = new Bmi(55.3, 165);
                     $bmi3 = new Bmi(45.2, 171);

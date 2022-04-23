@@ -94,7 +94,7 @@ include_once 'layout/sidebar.php';
         if ($perintah == "") {
           include 'tugas_praktikum/praktikum6/project_praktikum_1.';
         } elseif ($perintah == 'class_diagram') {
-          include 'tugas_praktikum/Project Pemograman Web/class_diagram.php';
+          include 'tugas_praktikum/Project Pemograman Web/class_table.php';
         }
       }
       ?>
