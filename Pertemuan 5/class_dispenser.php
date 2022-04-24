@@ -1,30 +1,47 @@
 <?php
-class Dispenser{
+class Dispenser
+{
     protected $volume;
     protected $hargaSegelas;
-    const volumeGelas = 250 . " ML";
+    private $volumeGelas;
     public $namaMinuman;
 
-    public function set_volume($v){
-        return $this->volume = $v;
+    function __construct($brand, $hargaSegelas, $volumeGelas, $vol)
+    {
+        $this->namaMinuman = $brand;
+        $this->volume = $vol;
+        $this->hargaSegelas = $hargaSegelas;
+        $this->volumeGelas = $volumeGelas;
     }
-    public function set_hargaSegelas($hs){
-        return $this->hargaSegelas = $hs;
+    public function beli($jumlah)
+    {
+        echo "Pengguna Membeli Minuman " . $this->namaMinuman . " Sejumlah " . $jumlah . " Gelas";
+        echo "<br>";
+        $this->volume = $this->volume - ($this->volumeGelas * $jumlah);
+        echo "Total Harganya adalah Rp " . ($this->hargaSegelas * $jumlah) . ",-";
+        echo "<br>";
+        return;
     }
-    public function pengurangan($vol){
-        $this->volume = $vol - self::volumeGelas;
-        echo "Hasil volume bernilai" ." ". $this->volume . " ML";
+    public function print()
+    {
+        echo "Merek Minuman = " . $this->namaMinuman;
+        echo "<br>";
+        echo "Isi wadah = " . $this->volume . " ml";
+        echo "<br>";
+        echo "Harga Pergelas = Rp " . $this->hargaSegelas . ",-";
+        echo "<br>";
+        echo "Ukuran Pergelas = " . $this->volumeGelas . " ml";
+        echo "<hr>";
     }
-}
+    public function isiUlang()
+    {
+        $this->volume = $this->volume + 10000;
+    }
+};
 
-$air = new Dispenser();
-echo $air -> namaMinuman = "<p style='text-align:center;'>  Minuman Le Minerale<p/>";
-echo "<hr>";
-echo $air -> set_volume("Volumenya adalah 1000 ML");
-echo "<br>";
-echo $air -> set_hargaSegelas("Harga segelasnya adalah Rp.". number_format("3000",0,".","."));
-echo "<br>";
-echo "Jundi membeli air 1 gelas yang bervolume ". Dispenser::volumeGelas;
-echo "<br>";
-$air->pengurangan(1000);
-?>
+$minuman = new Dispenser("Coca Cola", 2000, 250, 10000);
+$minuman->print();
+$minuman->beli(4);
+$minuman->print();
+$minuman->isiUlang();
+$minuman->print();
