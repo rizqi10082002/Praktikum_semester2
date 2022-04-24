@@ -1,23 +1,10 @@
 <?php
-class Mahasiswa {
-    var $nim;
-    var $nama;
-    var $thn_angkatan;
-    var $prodi;
-    var $ipk;
-    function __construct($nim,$nama) {
-        $this->nim = $nim;
-        $this->nama = $nama;
-    }
-    function predikat_ipk() {
-        if ($this->ipk < 2.0) return "Cukup";
-        elseif ($this->ipk >= 2.0 && $this->ipk <= 3.0)
-            return "Baik";
-        elseif ($this->ipk >= 3.0 && $this->ipk <= 3.75)
-            return "Memuaskan";
-        elseif ($this->ipk > 3.75 && $this->ipk <= 4.0)
-            return "Cumlaude";
-        
-    }
-}
+require_once "class_lingkaran.php";
+echo "NILAI PHI " . Lingkaran::PHI;
+$lingkar1 = new Lingkaran( 10 );
+$lingkar2 = new Lingkaran( 4 );
+echo "<br/>Luas Lingkaran I ".$lingkar1->getLuas();
+echo "<br>Luas Lingkaran II ".$lingkar2->getLuas();
+echo "Keliling Lingkaran I ".$lingkar1->getKeliling();
+echo "<br>Keliling Lingkaran II ".$lingkar2->getKeliling();
 ?>
