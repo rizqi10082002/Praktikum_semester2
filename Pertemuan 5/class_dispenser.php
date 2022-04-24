@@ -39,7 +39,7 @@ class Dispenser
     }
 };
 
-$minuman = new Dispenser("Coca Cola", 2000, 250, 10000);
+$minuman = new Dispenser("Pepsi", 3000, 2500, 20000);
 $minuman->print();
 $minuman->beli(4);
 $minuman->print();

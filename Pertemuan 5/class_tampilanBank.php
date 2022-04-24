@@ -18,15 +18,15 @@ $bank = [$bk1,$bk2,$bk3];
 </head>
 <body>
     <table class="table">
-        <h1 class="text-center mt-3">Bank Jey</h1>
+        <h1 class="text-center mt-3">Bank ABC</h1>
         <div class="container-fluid mb-3">
             <div class="row">
                 <div class="col-md-5">
                 <blockquote class="blockquote">
                 <p>Aktivitas :</p>
                 </blockquote>
-                <p class="lead">Jarwo nabung Rp. 1.000.000 <br>
-                Kevin tarik uang Rp. 2.500.000</p>
+                <p class="lead">Pazo nabung Rp. 1.000.000 <br>
+                Deni tarik uang Rp. 2.500.000</p>
                 </div>
             </div>
         </div>
